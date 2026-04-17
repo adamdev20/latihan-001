@@ -4,6 +4,30 @@
     font-family: "Roboto", sans-serif;
 }
 
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .navigasi {
+        flex-direction: column;
+        width: 100%;
+        display: none; 
+    }
+
+    .navigasi.active {
+        display: flex;
+    }
+
+    .navigasi > li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 15px;
+    }
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -76,6 +100,20 @@
 .navigasi > li > a:hover {
     color: crimson;
     transition: all .3s ease-in-out;
+}
+
+.toggle-btn {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+        align-self: flex-end;
+    }
 }
 
 .active {
