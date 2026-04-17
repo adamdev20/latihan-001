@@ -13,6 +13,7 @@
              <div class="meimei">
                 <div class="fname">adam</div>
                 <div class="lname">snyder</div>
+                <div class="toggle-btn">☰</div>
              </div>
             <ul class="navigasi">
                 <li><a href="#">about</a></li>
@@ -22,5 +23,14 @@
             </ul>
         </nav>
     </div>
+
+<script>
+const toggleBtn = document.querySelector(".toggle-btn");
+const nav = document.querySelector(".navigasi");
+
+toggleBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
 </body>
 </html>
