@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-       
-        <nav class="wrapper">
-             <div class="meimei">
-                <div class="fname">adam</div>
-                <div class="lname">snyder</div>
-                <div class="toggle-btn">☰</div>
-             </div>
-            <ul class="navigasi">
-                <li><a href="#">about</a></li>
-                <li><a href="#">project</a></li>
-                <li><a href="#" class="active">contact</a></li>
-                 <li><img src="logo.gif" alt="" /></li>
-            </ul>
-        </nav>
-    </div>
+
+<div class="container">
+
+    <nav class="wrapper">
+
+        <div class="meimei">
+            <div class="fname">adam</div>
+            <div class="lname">snyder</div>
+        </div>
+
+        <div class="toggle-btn">☰</div>
+
+        <ul class="navigasi">
+            <li><a href="#">about</a></li>
+            <li><a href="#">project</a></li>
+            <li><a href="#" class="active">contact</a></li>
+            <li><img src="logo.gif" alt="logo"></li>
+        </ul>
+
+    </nav>
+
+</div>
 
 <script>
 const toggleBtn = document.querySelector(".toggle-btn");
@@ -32,5 +38,6 @@ toggleBtn.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
 </script>
+
 </body>
 </html>
