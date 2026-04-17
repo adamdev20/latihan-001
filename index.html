@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
 
-    <nav class="wrapper">
+<nav class="wrapper">
 
-        <div class="meimei">
-            <div class="fname">adam</div>
-            <div class="lname">snyder</div>
-        </div>
+<div class="meimei">
+<div class="fname">adam</div>
+<div class="lname">snyder</div>
+</div>
 
-        <div class="toggle-btn">☰</div>
+<div class="toggle-btn">☰</div>
 
-        <ul class="navigasi">
-            <li><a href="#">about</a></li>
-            <li><a href="#">project</a></li>
-            <li><a href="#" class="active">contact</a></li>
-            <li><img src="logo.gif" alt="logo"></li>
-        </ul>
+<ul class="navigasi">
+<li><a href="#">about</a></li>
+<li><a href="#">project</a></li>
+<li><a href="#" class="active">contact</a></li>
+<li><img src="logo.gif"></li>
+</ul>
 
-    </nav>
+</nav>
 
 </div>
 
@@ -35,7 +35,7 @@ const toggleBtn = document.querySelector(".toggle-btn");
 const nav = document.querySelector(".navigasi");
 
 toggleBtn.addEventListener("click", () => {
-    nav.classList.toggle("active");
+nav.classList.toggle("active");
 });
 </script>
 
